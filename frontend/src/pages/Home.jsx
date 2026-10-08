@@ -1,6 +1,5 @@
 import Navbar from '../components/Navbar'
 import MainBannar from '../assets/MainBannar.png'
-import Locations from '../components/Locations'
 import MechBlink24_7 from '../assets/MechBlink24_7.png'
 import MechBlinkSeason from '../assets/MechBlinkSeason.png'
 import { useNavigate } from "react-router-dom"
