@@ -1,0 +1,27 @@
+[1mdiff --git a/frontend/src/App.jsx b/frontend/src/App.jsx[m
+[1mindex 9a15bf3..d934dbb 100644[m
+[1m--- a/frontend/src/App.jsx[m
+[1m+++ b/frontend/src/App.jsx[m
+[36m@@ -1,13 +1,21 @@[m
+ import React from 'react'[m
+ import { Routes, Route } from 'react-router-dom'[m
+ import Home from './pages/Home';[m
+[31m-import { Login, Register } from './pages/User/Login'[m
+[32m+[m[32mimport Service from './pages/Service';[m
+[32m+[m[32mimport Products from './pages/Products';[m
+[32m+[m[32mimport ContactUs from './pages/ContactUs';[m
+[32m+[m[32mimport AboutUs from './pages/AboutUs';[m
+[32m+[m[32mimport { Login, Register } from './pages/User/Login';[m
+ import Dashboard from './pages/User/DashBoard'[m
+ function App(){[m
+   return ([m
+     <>[m
+     <Routes>[m
+       <Route path='/' element={<Home/>} />[m
+[32m+[m[32m      <Route path='/services' element={<Service />} />[m
+[32m+[m[32m      <Route path='/products' element={<Products />} />[m
+[32m+[m[32m      <Route path='/contact' element={<ContactUs />} />[m
+[32m+[m[32m      <Route path='/about' element={<AboutUs />} />[m
+       <Route path="/loginIntf" element={<Login/>} />[m
+       <Route path="/registerIntf" element={<Register/>} />[m
+       <Route path="/dashboard" element={<Dashboard/>} />[m
