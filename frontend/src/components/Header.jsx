@@ -15,8 +15,8 @@ export default function Header({ showAuthButtons = false }) {
 
             {showAuthButtons ? (
                 <div className='flex gap-2 mx-10'>
-                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded' onClick={() => nav('/login')}>Login</button>
-                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded' onClick={() => nav('/register')}>Sign Up</button>
+                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded' onClick={() => nav('/loginIntf')}>Login</button>
+                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded' onClick={() => nav('/registerIntf')}>Sign Up</button>
                 </div>
             ) : (
                 <div className='w-40 mx-10'></div>
