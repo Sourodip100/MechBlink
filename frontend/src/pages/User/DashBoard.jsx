@@ -10,7 +10,20 @@ export default function DashBoard() {
             </div>
             <main>
                 <h2 className='text-2xl font-bold'>Book Instant Service</h2>
-                <div id="service-container"></div>
+                <div id="service-container">
+                    {locationData ? (
+                        <div>
+                            <h3 className='text-xl font-bold'>Available Services in {locationData.city}, {locationData.state}</h3>
+                            <ul>
+                                {locationData.services.map((service, index) => (
+                                    <li key={index}>{service}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    ) : (
+                        <p>Please select a location to view available services.</p>
+                    )}
+                </div>
             </main>
         </>
     )
