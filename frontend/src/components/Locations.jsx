@@ -23,9 +23,9 @@ export default function Locations({ onLocationData }) {
     }
     return (
         <>
-            <div className='flex flex-row gap-3'>
+            <div className='w-500px flex flex-row gap-3'>
                 <div>
-                    <p className='text-lg'> Tell us your current location </p>
+                    <p className='w-full text-lg'> Tell us your current location </p>
                     <label htmlFor="pincode">Pincode : </label> 
                     <input type="number" placeholder="Enter your Pincode" id="pincode" className="px-2 text-blue-300 w-38 bg-white" value={pin} onChange={(e) => setPin(e.target.value)}/>
                 </div>
